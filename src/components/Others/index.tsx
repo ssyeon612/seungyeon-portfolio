@@ -10,8 +10,7 @@ const Others = () => {
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                             <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2023.10</div>
                             <div className="z-10 sm:col-span-6">
-                                <h3 className="font-medium leading-snug text-slate-200">SQLD 자격증</h3>
-
+                                <h3 className="font-medium leading-snug">SQLD 자격증</h3>
                                 <ul className="mt-2 flex flex-wrap" aria-label="Related links">
                                     <li className="mr-4">
                                         <a
@@ -35,7 +34,7 @@ const Others = () => {
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                             <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2020.01 — 2020.07</div>
                             <div className="z-10 sm:col-span-6">
-                                <h3 className="font-medium leading-snug text-slate-200">KH 정보교육원</h3>
+                                <h3 className="font-medium leading-snug">KH 정보교육원</h3>
                                 <div className="text-slate-500" aria-hidden="true">
                                     자바 프레임워크 양성과정 수료
                                 </div>
@@ -46,7 +45,7 @@ const Others = () => {
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                             <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2011.01 — 2014.03</div>
                             <div className="z-10 sm:col-span-6">
-                                <h3 className="font-medium leading-snug text-slate-200">서울관광고등학교 졸업</h3>
+                                <h3 className="font-medium leading-snug">서울관광고등학교 졸업</h3>
                             </div>
                         </div>
                     </li>

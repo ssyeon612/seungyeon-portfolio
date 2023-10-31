@@ -5,32 +5,13 @@ const About = () => {
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
             </div>
             <div>
-                <p className="mb-4">
+                <p className="mb-4 text-xl font-bold">
                     {/* <span className="group/korok inline-flex lg:cursor-[url('/images/koroks/Elma.png'),_pointer] lg:font-medium lg:text-slate-200"> */}
-                    <span className="group/korok inline-flex cursor-pointer lg:font-medium">
-                        <span className="group-hover/korok:text-red-400 transition duration-75 group-hover/korok:-translate-y-px delay-[50ms]" aria-hidden="true">
-                            안
-                        </span>
-                        <span className="group-hover/korok:text-orange-400 transition duration-75 group-hover/korok:-translate-y-px delay-[75ms]" aria-hidden="true">
-                            녕
-                        </span>
-                        <span className="group-hover/korok:text-yellow-400 transition duration-75 group-hover/korok:-translate-y-px delay-[100ms]" aria-hidden="true">
-                            하
-                        </span>
-                        <span className="group-hover/korok:text-lime-400 transition duration-75 group-hover/korok:-translate-y-px delay-[125ms]" aria-hidden="true">
-                            세
-                        </span>
-                        <span className="group-hover/korok:text-green-400 transition duration-75 group-hover/korok:-translate-y-px delay-[150ms]" aria-hidden="true">
-                            요
-                        </span>
-                        <span className="group-hover/korok:text-teal-400 transition duration-75 group-hover/korok:-translate-y-px delay-[175ms]" aria-hidden="true">
-                            ,
-                        </span>
-                    </span>
+                    안녕하세요,
                     <br />
                 </p>
-                <p className="mb-4 text-primary">
-                    끊임엇는 배움을 추구하지만 그로인한 경험과 처음의 마음가짐을 잃지 않고 변함없는 사람이 되고 싶은 프론트엔드 개발자 정승연입니다. 저는 어떤일이 일어나는 원인에 대해 추론하고
+                <p className="mb-4">
+                    끊임없는 배움을 추구하지만 그로인한 경험과 처음의 마음가짐을 잃지 않고 변함없는 사람이 되고 싶은 프론트엔드 개발자 정승연입니다. 저는 어떤일이 일어나는 원인에 대해 추론하고
                     생각하기를 좋아합니다. 그렇기 때문에 초기 단계부터 구축하여 개선까지 시켜나가는 프로덕트에 제 흔적을 남기고 싶은 갈증을 가지고 있습니다.
                 </p>
                 <p className="mb-4 font-bold">믿을 수 있고 듬직한 사람이 되겠습니다.</p>

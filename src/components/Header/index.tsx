@@ -14,7 +14,40 @@ const Header = () => {
             <div>
                 <DatrModeToggleButton />
                 {/* <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"> */}
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">SEUNG YEON</h1>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                    <span className="group/name inline-flex cursor-pointer lg:font-medium">
+                        <span className="group-hover/name:text-red-400 transition duration-75 group-hover/name:-translate-y-px delay-[50ms]" aria-hidden="true">
+                            S
+                        </span>
+                        <span className="group-hover/name:text-orange-400 transition duration-75 group-hover/name:-translate-y-px delay-[75ms]" aria-hidden="true">
+                            E
+                        </span>
+                        <span className="group-hover/name:text-yellow-400 transition duration-75 group-hover/name:-translate-y-px delay-[100ms]" aria-hidden="true">
+                            U
+                        </span>
+                        <span className="group-hover/name:text-lime-400 transition duration-75 group-hover/name:-translate-y-px delay-[125ms]" aria-hidden="true">
+                            N
+                        </span>
+                        <span className="group-hover/name:text-green-400 transition duration-75 group-hover/name:-translate-y-px delay-[150ms]" aria-hidden="true">
+                            G
+                        </span>
+                        <span className="group-hover/name:text-teal-400 transition duration-75 group-hover/name:-translate-y-px delay-[175ms]" aria-hidden="true">
+                            &nbsp;
+                        </span>
+                        <span className="group-hover/name:text-sky-400 transition duration-75 group-hover/name:-translate-y-px delay-[200ms]" aria-hidden="true">
+                            Y
+                        </span>
+                        <span className="group-hover/name:text-blue-400 transition duration-75 group-hover/name:-translate-y-px delay-[225ms]" aria-hidden="true">
+                            E
+                        </span>
+                        <span className="group-hover/name:text-indigo-400 transition duration-75 group-hover/name:-translate-y-px delay-[250ms]" aria-hidden="true">
+                            O
+                        </span>
+                        <span className="group-hover/name:text-purple-400 transition duration-75 group-hover/name:-translate-y-px delay-[275ms]" aria-hidden="true">
+                            N
+                        </span>
+                    </span>
+                </h1>
                 <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">FRONT-END DEVELOPER</h2>
                 <p className="mt-4 max-w-xs leading-normal">변화하지만 변함없는 개발자 정승연 입니다.</p>
                 <nav className="nav hidden lg:block" aria-label="In-page jump links">
@@ -34,27 +67,23 @@ const Header = () => {
             </div>
             <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="mailto:ssyeon612@gmail.com" target="_blank" rel="noreferrer">
-                        <span className="sr-only">Mail</span>
+                    <a className="block hover:text-slate-200" href="mailto:ssyeon612@gmail.com" target="_blank">
                         <Image src="/icons/i_mail.svg" alt="blog" width={35} height={40} />
                     </a>
                 </li>
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="https://github.com/ssyeon612" target="_blank" rel="noreferrer">
-                        <span className="sr-only">GitHub</span>
+                    <a className="block hover:text-slate-200" href="https://github.com/ssyeon612" target="_blank">
                         <Image src="/icons/i_github.svg" alt="blog" width={25} height={40} />
                     </a>
                 </li>
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="https://yeongseungjeong.tistory.com" target="_blank" rel="noreferrer">
-                        <span className="sr-only">Blog</span>
+                    <a className="block hover:text-slate-200" href="https://yeongseungjeong.tistory.com" target="_blank">
                         <Image src="/icons/i_web.svg" alt="blog" width={25} height={40} />
                     </a>
                 </li>
 
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="https://github.com/ssyeon612" target="_blank" rel="noreferrer">
-                        <span className="sr-only">Resume</span>
+                    <a className="block hover:text-slate-200" href="https://github.com/ssyeon612" target="_blank">
                         <Image src="/icons/i_cv.svg" alt="blog" width={30} height={40} />
                     </a>
                 </li>
