@@ -12,7 +12,6 @@ export default async function Home() {
     console.log(notionData);
     return (
         <main className="app pt-24 lg:w-1/2 lg:py-24">
-            <button className="bg-white text-black p-5">test</button>
             <About />
             <Experience />
             <Projects />
