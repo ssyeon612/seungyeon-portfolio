@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-        domains: ["www.notion.so", "images.unsplash.com"],
-    },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

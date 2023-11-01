@@ -1,4 +1,4 @@
-import { DATABASE_ID, TOKEN } from "@/config";
+import { DATABASE_ID, TOKEN } from "@/app/config";
 
 export async function getData() {
     const options = {
