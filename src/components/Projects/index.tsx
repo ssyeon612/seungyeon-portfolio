@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
     const datas = [
@@ -85,32 +86,39 @@ const Projects = () => {
                 <div className="flex flex-wrap -m-4">
                     <div className="p-4 lg:p-0 md:w-full">
                         {datas.map((data, index) => (
-                            <div className="flex border-2 rounded-lg border-teal-200 border-opacity-50 p-6 sm:flex-row flex-col mb-10 relative" key={index}>
-                                <div className="absolute top-[-0.8rem] left-5 bg-primary px-2">{data.period}</div>
-                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
+                            <div className="flex border-2 rounded-lg border-blue-500 dark:border-teal-200 border-opacity-50 p-8 sm:flex-row flex-col mb-10 relative" key={index}>
+                                <div className="absolute top-[-0.8rem] left-5 bg-primary px-2 text-slate-500">{data.period}</div>
+                                <div className="absolute bottom-[-1rem] right-3 bg-primary px-1 text-slate-500">
+                                    <Link href="https://customer.perce.co.kr" target="_blank">
+                                        <Image src="/icons/web-r-icon.svg" width={30} height={20} alt="web" className="hover:opacity-50 hover:scale-90" />
+                                    </Link>
+                                </div>
+                                <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-blue-100/80  dark:bg-teal-100/80 flex-shrink-0">
                                     {data.platform === "PC+MOBILE" ? (
-                                        <Image src="/icons/i_pc_w_mobile.svg" alt="" width={30} height={30} />
+                                        <Image src="/icons/pc-mobile-icon.svg" alt="" width={30} height={30} />
                                     ) : (
-                                        <Image src="/icons/i_mobile.svg" alt="" width={30} height={30} />
+                                        <Image src="/icons/mobile-icon.svg" alt="" width={30} height={30} />
                                     )}
                                 </div>
                                 <div className="flex-grow">
-                                    <h2 className="text-lg title-font font-medium mb-3 flex items-center">
+                                    <h2 className="text-lg title-font font-medium mb-3 lg:flex lg:items-center">
                                         {data.name}
                                         <span className="text-sm font-light">&nbsp;&#183; {data.company}</span>
                                     </h2>
                                     <ul className="leading-relaxed text-sm font-normal">
                                         {data.works.map((work, index2) => (
                                             <li className="flex" key={index2}>
-                                                <Image src="/icons/i_done.svg" alt="done" width={20} height={25} className="mr-2" />
+                                                <Image src="/icons/done-icon.svg" alt="done" width={20} height={25} className="mr-2" />
                                                 <p>{work}</p>
                                             </li>
                                         ))}
                                     </ul>
                                     <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                         {data.skills.map((skill, index2) => (
-                                            <li className="mr-1.5 mt-2">
-                                                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{skill}</div>
+                                            <li className="mr-1.5 mt-2" key={index2}>
+                                                <div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 bg-blue-700/10  text-blue-600 dark:bg-teal-400/10  dark:text-teal-300">
+                                                    {skill}
+                                                </div>
                                             </li>
                                         ))}
                                     </ul>

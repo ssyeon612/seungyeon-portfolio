@@ -1,13 +1,18 @@
-"use client";
+// "use client";
 
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Others from "@/components/Others";
 
-export default function Home() {
+import { getData } from "@/api/notion";
+
+export default async function Home() {
+    const notionData = getData();
+    console.log(notionData);
     return (
         <main className="app pt-24 lg:w-1/2 lg:py-24">
+            <button className="bg-white text-black p-5">test</button>
             <About />
             <Experience />
             <Projects />

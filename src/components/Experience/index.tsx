@@ -58,7 +58,7 @@ const Experience = () => {
                                     <ul className="mt-2 text-sm leading-normal">
                                         {data.works?.map((work, index2) => (
                                             <li key={index2} className="flex items-center">
-                                                <Image src="/icons/i_done.svg" alt="done" width={20} height={25} className="mr-2" />
+                                                <Image src="/icons/done-icon.svg" alt="done" width={20} height={25} className="mr-2" />
                                                 <p>{work}</p>
                                             </li>
                                         ))}
@@ -83,8 +83,10 @@ const Experience = () => {
                                     </ul>
                                     <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                         {data.skills.map((skill, index2) => (
-                                            <li className="mr-1.5 mt-2">
-                                                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">{skill}</div>
+                                            <li className="mr-1.5 mt-2" key={index2}>
+                                                <div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 bg-blue-700/10  text-blue-600 dark:bg-teal-400/10  dark:text-teal-300">
+                                                    {skill}
+                                                </div>
                                             </li>
                                         ))}
                                     </ul>

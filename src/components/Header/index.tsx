@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import DatrModeToggleButton from "../DarkModeButton";
 
 const Header = () => {
@@ -55,8 +56,8 @@ const Header = () => {
                         {menus.map((menu, index) => (
                             <li key={index}>
                                 <a className="group flex items-center py-3 active" href={`#${menu.href}`}>
-                                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                                    <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-800 group-focus-visible:w-16 group-focus-visible:bg-slate-800  dark:group-focus-visible:bg-slate-200  dark:group-hover:bg-slate-200 motion-reduce:transition-none"></span>
+                                    <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-800 group-focus-visible:text-slate-800 dark:text-slate-500 dark:group-hover:text-slate-200 dark:group-focus-visible:text-slate-200">
                                         {menu.name}
                                     </span>
                                 </a>
@@ -67,24 +68,24 @@ const Header = () => {
             </div>
             <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="mailto:ssyeon612@gmail.com" target="_blank">
-                        <Image src="/icons/i_mail.svg" alt="blog" width={35} height={40} />
+                    <a className="block hover:opacity-50 hover:scale-90" href="mailto:ssyeon612@gmail.com" target="_blank">
+                        <Image src="/icons/mail-icon.svg" alt="mail" width={35} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
                 </li>
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="https://github.com/ssyeon612" target="_blank">
-                        <Image src="/icons/i_github.svg" alt="blog" width={25} height={40} />
+                    <a className="block hover:opacity-50 hover:scale-90" href="https://github.com/ssyeon612" target="_blank">
+                        <Image src="/icons/github-icon.svg" alt="github" width={25} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
                 </li>
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="https://yeongseungjeong.tistory.com" target="_blank">
-                        <Image src="/icons/i_web.svg" alt="blog" width={25} height={40} />
+                    <a className="block hover:opacity-50 hover:scale-90" href="https://yeongseungjeong.tistory.com" target="_blank">
+                        <Image src="/icons/web-icon.svg" alt="blog" width={25} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
                 </li>
 
                 <li className="mr-5 text-xs">
-                    <a className="block hover:text-slate-200" href="https://github.com/ssyeon612" target="_blank">
-                        <Image src="/icons/i_cv.svg" alt="blog" width={30} height={40} />
+                    <a className="block hover:opacity-50 hover:scale-90" href="https://github.com/ssyeon612" target="_blank">
+                        <Image src="/icons/cv-icon.svg" alt="" width={30} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
                 </li>
             </ul>
