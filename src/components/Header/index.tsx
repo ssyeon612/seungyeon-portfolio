@@ -67,26 +67,30 @@ const Header = () => {
                 </nav>
             </div>
             <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
-                <li className="mr-5 text-xs">
-                    <a className="block hover:opacity-50 hover:scale-90" href="mailto:ssyeon612@gmail.com" target="_blank">
+                <li className="group mr-5 text-xs flex flex-col items-center">
+                    <a className="block opacity-50 hover:opacity-100 text-slate-300" href="mailto:ssyeon612@gmail.com" target="_blank">
                         <Image src="/icons/mail-icon.svg" alt="mail" width={35} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
+                    <p className="invisible transition-all group-hover:visible group-hover:translate-y-1">mail</p>
                 </li>
-                <li className="mr-5 text-xs">
-                    <a className="block hover:opacity-50 hover:scale-90" href="https://github.com/ssyeon612" target="_blank">
+                <li className="group mr-5 text-xs flex flex-col items-center">
+                    <a className="block opacity-50 hover:opacity-100" href="https://github.com/ssyeon612" target="_blank">
                         <Image src="/icons/github-icon.svg" alt="github" width={25} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
+                    <p className="invisible transition-all group-hover:visible group-hover:translate-y-2">github</p>
                 </li>
-                <li className="mr-5 text-xs">
-                    <a className="block hover:opacity-50 hover:scale-90" href="https://yeongseungjeong.tistory.com" target="_blank">
+                <li className="group mr-5 text-xs flex flex-col items-center">
+                    <a className="block opacity-50 hover:opacity-100" href="https://yeongseungjeong.tistory.com" target="_blank">
                         <Image src="/icons/blog-icon.svg" alt="blog" width={28} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
+                    <p className="invisible transition-all group-hover:visible group-hover:translate-y-2">blog</p>
                 </li>
 
-                <li className="mr-5 text-xs">
-                    <a className="block hover:opacity-50 hover:scale-90" href="https://github.com/ssyeon612" target="_blank">
+                <li className="group mr-5 text-xs flex flex-col items-center">
+                    <a className="block opacity-50 hover:opacity-100" href="https://github.com/ssyeon612" target="_blank">
                         <Image src="/icons/doc-icon.svg" alt="" width={30} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
+                    <p className="invisible transition-all group-hover:visible group-hover:translate-y-2">resume</p>
                 </li>
             </ul>
         </header>
