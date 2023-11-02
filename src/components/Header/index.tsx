@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
 
+import { useEffect } from "react";
+import Image from "next/image";
 import DatrModeToggleButton from "../DarkModeButton";
 
 const Header = () => {
@@ -9,6 +11,27 @@ const Header = () => {
         { name: "Projects", href: "project" },
         { name: "Others", href: "others" },
     ];
+
+    useEffect(() => {
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                let id = entry.target.id;
+                let links = document.querySelectorAll("nav a");
+                links.forEach((link) => {
+                    const href = link?.getAttribute("href");
+                    if (`#${id}` === href) {
+                        console.log(id);
+                        link.classList.toggle("active", entry.isIntersecting);
+                        // if (entry.isIntersecting) observer.unobserve(entry.target);
+                    }
+                });
+            });
+        });
+        let sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+    }, []);
 
     return (
         <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
