@@ -7,7 +7,7 @@ const Experience = () => {
             period: "2022.11 — 2023.07",
             role: "Frontend Developer",
             skills: ["Vue", "Javascript", "SCSS"],
-            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "디바이스 크기별 분기점을 설정해 모바일, PC 사이즈로 분리", "컴포넌트 세분화로 효율성 증가"],
+            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "비즈니스 요구사항에 따른 리팩토링", "컴포넌트 세분화로 효율성 증가"],
             links: [
                 { name: "unsoft", url: "https://www.unsoft.co.kr" },
                 { name: "perce", url: "https://customer.perce.co.kr" },

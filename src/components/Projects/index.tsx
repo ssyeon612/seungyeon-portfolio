@@ -4,11 +4,26 @@ import Link from "next/link";
 const Projects = () => {
     const projects = [
         {
+            name: "개인 포트폴리오",
+            period: "2023.09 — 2023.10",
+            skills: ["Next", "Javascript", "Tailwind CSS"],
+            works: [""],
+            platform: "PC",
+            device: "PC",
+            web: "https://seungyeonj.netlify.app",
+            github: "https://github.com/ssyeon612/seungyeon-portfolio-2023",
+        },
+        {
             company: "유앤소프트",
             name: "휴대폰, 인터넷 견적비교 플랫폼 : 퍼스",
             period: "2022.11 — 2023.07",
             skills: ["Vue", "Javascript", "SCSS"],
-            works: ["사용자 이탈률 방지를 위해 간편 로그인 도입", "앱 활성화를 위한 커뮤니티 서비스 도입", "통합 검색 기능추가로 편의성 증가", "GA"],
+            works: [
+                "사용자 이탈률 방지를 위해 간편 로그인 도입",
+                "앱 활성화를 위한 커뮤니티 서비스 도입",
+                "통합 검색 기능추가로 편의성 증가",
+                "디바이스 크기별 분기점을 설정해 모바일, PC 사이즈로 분리",
+            ],
             platform: "PC+MOBILE",
             device: "PC<br />Hybrid APP",
             web: "https://customer.perce.co.kr",
@@ -106,10 +121,12 @@ const Projects = () => {
                                 {/* 프로젝트 플랫폼 */}
                                 <div className="sm:mr-8 sm:mb-0 mb-4 flex lg:flex-col items-center">
                                     <div className="w-16 h-16 inline-flex items-center justify-center rounded-full bg-blue-100/80  dark:bg-teal-100/80 flex-shrink-0 lg:mr-0 mr-4">
-                                        {project.platform === "PC+MOBILE" ? (
-                                            <Image src="/icons/pc-mobile-icon.svg" alt="" width={30} height={30} />
-                                        ) : (
+                                        {project.platform === "PC" ? (
+                                            <Image src="/icons/pc-icon.svg" alt="" width={30} height={30} />
+                                        ) : project.platform === "MOBILE" ? (
                                             <Image src="/icons/mobile-icon.svg" alt="" width={30} height={30} />
+                                        ) : (
+                                            <Image src="/icons/pc-mobile-icon.svg" alt="" width={30} height={30} />
                                         )}
                                     </div>
                                     {project.device && (
@@ -124,7 +141,7 @@ const Projects = () => {
                                     {/* 프로젝트명 */}
                                     <h2 className="text-lg title-font font-medium mb-3 lg:flex lg:items-center">
                                         {project.name}
-                                        <span className="text-sm font-light">&nbsp;&#183; {project.company}</span>
+                                        {project.company && <span className="text-sm font-light">&nbsp;&#183; {project.company}</span>}
                                     </h2>
                                     {/* 프로젝트 내용 */}
                                     <ul className="leading-relaxed text-sm font-normal">
@@ -165,6 +182,11 @@ const Projects = () => {
                                         {project.ios && (
                                             <Link href={project.ios} target="_blank">
                                                 <Image src="/icons/apple-icon.svg" width={25} height={20} alt="web" className="hover:opacity-50 hover:scale-90 brightness-0 dark:brightness-100" />
+                                            </Link>
+                                        )}
+                                        {project.github && (
+                                            <Link href={project.github} target="_blank">
+                                                <Image src="/icons/github-icon.svg" width={23} height={20} alt="web" className="hover:opacity-50 hover:scale-90 brightness-0 dark:brightness-100" />
                                             </Link>
                                         )}
                                     </div>
