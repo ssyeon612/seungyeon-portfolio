@@ -46,6 +46,9 @@ const Others = () => {
                             <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2011.01 — 2014.03</div>
                             <div className="z-10 sm:col-span-6">
                                 <h3 className="font-medium leading-snug">서울관광고등학교 졸업</h3>
+                                <div className="text-slate-500" aria-hidden="true">
+                                    홍보미디어과
+                                </div>
                             </div>
                         </div>
                     </li>

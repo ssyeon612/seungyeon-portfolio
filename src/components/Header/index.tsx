@@ -13,8 +13,6 @@ const Header = () => {
     ];
 
     const callback = function (entries: any, observer: any) {
-        console.log(entries);
-        console.log(observer);
         entries.forEach((entry: any) => {
             let id = entry.target.id;
             let links = document.querySelectorAll("nav a");
@@ -29,7 +27,7 @@ const Header = () => {
 
     useEffect(() => {
         let observer = new IntersectionObserver(callback, {
-            rootMargin: "-300px 0px -300px 0px",
+            rootMargin: "-300px 0px -400px 0px",
         });
         let sections = document.querySelectorAll("section");
         sections.forEach((section) => observer.observe(section));
