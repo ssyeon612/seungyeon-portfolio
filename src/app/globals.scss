@@ -86,9 +86,9 @@ span {
 
 nav a.active {
     :nth-child(1) {
-        background: red;
+        @apply transition-all w-16 bg-slate-800 dark:bg-slate-200;
     }
     :nth-child(2) {
-        background: yellow;
+        @apply text-slate-800 dark:text-slate-200;
     }
 }

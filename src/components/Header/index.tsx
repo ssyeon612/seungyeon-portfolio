@@ -12,25 +12,27 @@ const Header = () => {
         { name: "Others", href: "others" },
     ];
 
-    useEffect(() => {
-        let observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                let id = entry.target.id;
-                let links = document.querySelectorAll("nav a");
-                links.forEach((link) => {
-                    const href = link?.getAttribute("href");
-                    if (`#${id}` === href) {
-                        console.log(id);
-                        link.classList.toggle("active", entry.isIntersecting);
-                        // if (entry.isIntersecting) observer.unobserve(entry.target);
-                    }
-                });
+    const callback = function (entries: any, observer: any) {
+        console.log(entries);
+        console.log(observer);
+        entries.forEach((entry: any) => {
+            let id = entry.target.id;
+            let links = document.querySelectorAll("nav a");
+            links.forEach((link) => {
+                const href = link?.getAttribute("href");
+                if (`#${id}` === href) {
+                    link.classList.toggle("active", entry.isIntersecting);
+                }
             });
         });
-        let sections = document.querySelectorAll("section");
-        sections.forEach((section) => {
-            observer.observe(section);
+    };
+
+    useEffect(() => {
+        let observer = new IntersectionObserver(callback, {
+            rootMargin: "-300px 0px -300px 0px",
         });
+        let sections = document.querySelectorAll("section");
+        sections.forEach((section) => observer.observe(section));
     }, []);
 
     return (
