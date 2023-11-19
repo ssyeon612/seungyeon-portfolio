@@ -62,7 +62,7 @@ const Projects = () => {
         {
             company: "앱지",
             name: "유언서비스 플랫폼 : 남김",
-            period: "2021.07 — 2021.01",
+            period: "2021.07 — 2022.01",
             skills: ["Vue.js", "Nuxt", "Java", "Spring Boot", "MySQL"],
             works: ["ffmpeg를 사용한 이미지, 영상 파일 압축 구현", "AOS/IOS 구독 인앱 결제 연동"],
             platform: "MOBILE",

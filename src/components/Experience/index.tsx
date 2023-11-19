@@ -7,7 +7,7 @@ const Experience = () => {
             period: "2022.11 — 2023.07",
             role: "Frontend Developer",
             skills: ["Vue", "Javascript", "SCSS"],
-            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "비즈니스 요구사항에 따른 리팩토링", "컴포넌트 세분화로 효율성 증가"],
+            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "비즈니스 요구사항에 따른 리팩토링", "기존 소스 컴포넌트 세분화로 효율성 증가"],
             links: [
                 { name: "unsoft", url: "https://www.unsoft.co.kr" },
                 { name: "perce", url: "https://customer.perce.co.kr" },
@@ -19,7 +19,7 @@ const Experience = () => {
             period: "2020.09 — 2022.11",
             role: "Server Developer",
             skills: ["Vue", "Nuxt", "Javascript", "SCSS", "Java", "Spring Boot", "MySQL"],
-            works: ["다양한 플랫폼의 맞춤웹/앱 제작 에이전시", "기존의 vue2 -> vue3 베이스 툴 변경"],
+            works: ["다양한 플랫폼의 맞춤웹/앱 제작 에이전시", "Vue2 베이스 소스에서 Vue3로 마이그레이션", "데이터 설계부터 프론트엔드, 백엔드 개발 및 배포"],
             links: [{ name: "appg", url: "https://appg.co.kr" }],
         },
         {
@@ -40,7 +40,6 @@ const Experience = () => {
                     {datas.map((data, index) => (
                         <li className="mb-12" key={index}>
                             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                                {/* <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div> */}
                                 <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="July to December 2017">
                                     {data.period}
                                 </header>
