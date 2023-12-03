@@ -7,7 +7,7 @@ const Experience = () => {
             period: "2022.11 — 2023.07",
             role: "Frontend Developer",
             skills: ["Vue", "Javascript", "SCSS"],
-            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "비즈니스 요구사항에 따른 리팩토링", "기존 소스 컴포넌트 세분화로 효율성 증가"],
+            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "각종 운영 이슈 처리 및 개선사항 적용", "기존 소스 컴포넌트 분리로 업무 효율성 증가"],
             links: [
                 { name: "unsoft", url: "https://www.unsoft.co.kr" },
                 { name: "perce", url: "https://customer.perce.co.kr" },
@@ -17,9 +17,9 @@ const Experience = () => {
         {
             name: "앱지 (appg)",
             period: "2020.09 — 2022.11",
-            role: "Server Developer",
+            role: "Full-Stack Developer",
             skills: ["Vue", "Nuxt", "Javascript", "SCSS", "Java", "Spring Boot", "MySQL"],
-            works: ["다양한 플랫폼의 맞춤웹/앱 제작 에이전시", "Vue2 베이스 소스에서 Vue3로 마이그레이션", "데이터 설계부터 프론트엔드, 백엔드 개발 및 배포"],
+            works: ["다양한 플랫폼의 맞춤웹/앱 제작 에이전시", "기존 베이스 소스 Vue2에서 Vue3로 마이그레이션", "13개의 프로젝트 구축/개발/배포 경험"],
             links: [{ name: "appg", url: "https://appg.co.kr" }],
         },
         {
