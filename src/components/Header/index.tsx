@@ -73,7 +73,7 @@ const Header = () => {
                     </span>
                 </h1>
                 <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">FRONT-END DEVELOPER</h2>
-                <p className="mt-4 max-w-xs leading-normal">변화하지만 변함없는 개발자 정승연 입니다.</p>
+                <p className="mt-4 max-w-xs leading-normal">변화하지만 변함없는 개발자 정승연입니다.</p>
                 <nav className="nav hidden lg:block" aria-label="In-page jump links">
                     <ul className="mt-16 w-max">
                         {menus.map((menu, index) => (
