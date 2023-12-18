@@ -6,27 +6,22 @@ const Experience = () => {
             name: "유앤소프트 (unsoft)",
             period: "2022.11 — 2023.07",
             role: "Frontend Developer",
-            skills: ["Vue", "Javascript", "SCSS"],
-            works: ["휴대폰, 인터넷 가격비교 O2O 통신 플랫폼", "각종 운영 이슈 처리 및 개선사항 적용", "기존 소스 컴포넌트 분리로 업무 효율성 증가"],
-            links: [
-                { name: "unsoft", url: "https://www.unsoft.co.kr" },
-                { name: "perce", url: "https://customer.perce.co.kr" },
-                { name: "perve owner", url: "https://owner.perce.co.kr" },
-            ],
+            skills: ["Vue.js", "Javascript", "SCSS"],
+            work: "휴대폰, 인터넷 가격비교 O2O 통신 플랫폼",
+            link: { name: "unsoft", url: "https://www.unsoft.co.kr" },
         },
         {
             name: "앱지 (appg)",
             period: "2020.09 — 2022.11",
-            role: "Full-Stack Developer",
-            skills: ["Vue", "Nuxt", "Javascript", "SCSS", "Java", "Spring Boot", "MySQL"],
-            works: ["다양한 플랫폼의 맞춤웹/앱 제작 에이전시", "기존 베이스 소스 Vue2에서 Vue3로 마이그레이션", "13개의 프로젝트 구축/개발/배포 경험"],
-            links: [{ name: "appg", url: "https://appg.co.kr" }],
+            role: "Web Developer",
+            skills: ["Vue.js", "Nuxt", "Javascript", "SCSS", "Java", "Spring Boot", "MySQL"],
+            work: "다양한 플랫폼의 맞춤웹/앱 제작 에이전시",
+            link: { name: "appg", url: "https://appg.co.kr" },
         },
         {
-            name: "싱가포르 근무",
+            name: "싱가포르 외식업 근무",
             period: "2013.12 — 2019.10",
             role: "F&B Captain",
-            works: ["호텔, 레스토랑에서 고객응대 및 직원교육"],
         },
     ];
 
@@ -46,40 +41,30 @@ const Experience = () => {
                                 <div className="z-10 sm:col-span-6">
                                     <h3 className="font-semibold leading-snug text-slate-200">
                                         <span className="inline-block">{data.name}</span>
-                                        <div>
-                                            <div className="text-slate-500 font-medium" aria-hidden="true">
-                                                {data.role}
-                                            </div>
-                                        </div>
+                                        {/* {data.link && (
+                                            <a
+                                                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
+                                                href={data.link.url}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mr-1 h-3 w-3" aria-hidden="true">
+                                                    <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
+                                                    <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
+                                                </svg>
+                                                <span>{data.link.name}</span>
+                                            </a>
+                                        )} */}
                                     </h3>
+                                    <div>
+                                        <div className="text-slate-500 text-sm" aria-hidden="true">
+                                            {data.role}
+                                        </div>
+                                    </div>
                                     <ul className="mt-2 text-sm leading-normal">
-                                        {data.works?.map((work, index2) => (
-                                            <li key={index2} className="flex items-center">
-                                                <Image src="/icons/done-icon.svg" alt="done" width={20} height={25} className="mr-2 brightness-0 dark:brightness-100" />
-                                                <p>{work}</p>
-                                            </li>
-                                        ))}
+                                        <p>{data.work && data.work}</p>
                                     </ul>
-                                    <ul className="mt-2 flex flex-wrap" aria-label="Related links">
-                                        {data.links &&
-                                            data.links.map((link, index2) => (
-                                                <li className="mr-4" key={index2}>
-                                                    <a
-                                                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
-                                                        href={link.url}
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                    >
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mr-1 h-3 w-3" aria-hidden="true">
-                                                            <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                                                            <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                                                        </svg>
-                                                        <span>{link.name}</span>
-                                                    </a>
-                                                </li>
-                                            ))}
-                                    </ul>
-                                    <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                    {/* <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                                         {data.skills &&
                                             data.skills.map((skill, index2) => (
                                                 <li className="mr-1.5 mt-2" key={index2}>
@@ -88,7 +73,7 @@ const Experience = () => {
                                                     </div>
                                                 </li>
                                             ))}
-                                    </ul>
+                                    </ul> */}
                                 </div>
                             </div>
                         </li>

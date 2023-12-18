@@ -25,7 +25,7 @@ a {
 }
 
 p {
-    @apply text-slate-900 dark:text-white;
+    // @apply text-slate-900 dark:text-white;
 }
 
 span {
@@ -109,10 +109,6 @@ nav a.active {
     color: rgb(20 184 166);
 }
 
-.details-toggle:checked + label {
-    color: rgb(20 184 166);
-}
-
 .details-toggle ~ .details {
     max-height: 0;
     opacity: 0;
@@ -123,4 +119,10 @@ nav a.active {
 .details-toggle:checked ~ .details {
     max-height: 100vh;
     opacity: 1;
+}
+
+.hightlight {
+    display: inline;
+    padding-inline: 5px 10px;
+    @apply bg-gradient-to-b from-transparent from-50% to-50% to-blue-300 dark:to-teal-700;
 }
