@@ -257,14 +257,14 @@ const Projects = () => {
                                             </label>
                                             {/* <div className="details text-sm m-3 break-keep" dangerouslySetInnerHTML={{ __html: project.desc }}></div> */}
                                             <div className="details m-3 ">
-                                                {project.reviews.map((review) => (
-                                                    <ul className="my-2">
-                                                        <li className="mb-3">
+                                                <ul className="my-2">
+                                                    {project.reviews.map((review, index2) => (
+                                                        <li className="mb-3" key={index2}>
                                                             <h3 className="font-semibold text-blue-600 dark:text-teal-400">{review.title}</h3>
                                                             <p className="text-sm break-keep">{review.desc}</p>
                                                         </li>
-                                                    </ul>
-                                                ))}
+                                                    ))}
+                                                </ul>
                                             </div>
                                         </div>
                                     )}
