@@ -106,7 +106,7 @@ nav a.active {
 
 .details-toggle:checked + label:before {
     transform: rotate(90deg);
-    color: rgb(20 184 166);
+    @apply text-blue-500 dark:text-teal-300;
 }
 
 .details-toggle ~ .details {
