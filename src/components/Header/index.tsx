@@ -110,7 +110,7 @@ const Header = () => {
                 </li>
 
                 <li className="group mr-5 text-xs flex flex-col items-center">
-                    <a className="block opacity-50 hover:opacity-100" href="https://jeongseungyeon.notion.site/91fc7b08e80248e9af4bf529cd2a9656?pvs=4" target="_blank">
+                    <a className="block opacity-50 hover:opacity-100" href="https://jeongseungyeon.notion.site/7088cba4eb72459bb04cbf959d3e2893?pvs=4" target="_blank">
                         <Image src="/icons/doc-icon.svg" alt="" width={30} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
                     <p className="invisible transition-all group-hover:visible group-hover:translate-y-2">resume</p>

@@ -1,27 +1,25 @@
-import Image from "next/image";
-
 const Experience = () => {
-    const datas = [
+    const experiences = [
         {
             name: "유앤소프트 (unsoft)",
             period: "2022.11 — 2023.07",
-            role: "Frontend Developer",
-            skills: ["Vue.js", "Javascript", "SCSS"],
-            work: "휴대폰, 인터넷 가격비교 O2O 통신 플랫폼",
-            link: { name: "unsoft", url: "https://www.unsoft.co.kr" },
+            role: "개발팀 | 주임",
+            position: "Frontend Developer",
+            desc: "휴대폰, 인터넷 가격을 비교할 수 있는 O2O 통신 플랫폼 스타트업으로 컴퍼니디, 인포뱅크, 스노우볼인베스트먼트 투자 유치 및 팁스(TIPS) 프로그램 선정",
         },
         {
             name: "앱지 (appg)",
             period: "2020.09 — 2022.11",
-            role: "Web Developer",
-            skills: ["Vue.js", "Nuxt", "Javascript", "SCSS", "Java", "Spring Boot", "MySQL"],
-            work: "다양한 플랫폼의 맞춤웹/앱 제작 에이전시",
-            link: { name: "appg", url: "https://appg.co.kr" },
+            role: "개발사업본부 | 연구원",
+            position: "Web Full Stack Developer",
+            desc: "300개 이상의 다양한 플랫폼 기반 Enterprise System 개발 전문 에이전시",
         },
         {
             name: "싱가포르 외식업 근무",
             period: "2013.12 — 2019.10",
-            role: "F&B Captain",
+            role: "식음료 부서| 캡틴",
+            position: "F&B 캡틴",
+            desc: "호텔, 레스토랑에서 고객 응대, 예약, 정산, 이벤트 기획 업무 경험 및 신입직원 교육",
         },
     ];
 
@@ -32,48 +30,23 @@ const Experience = () => {
             </div>
             <div>
                 <ol className="group/list">
-                    {datas.map((data, index) => (
+                    {experiences.map((experience, index) => (
                         <li className="mb-12" key={index}>
                             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                                 <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="July to December 2017">
-                                    {data.period}
+                                    {experience.period}
                                 </header>
-                                <div className="z-10 sm:col-span-6">
+                                <div className="z-10 sm:col-span-6 flex flex-col gap-1">
                                     <h3 className="font-semibold leading-snug text-slate-200">
-                                        <span className="inline-block">{data.name}</span>
-                                        {/* {data.link && (
-                                            <a
-                                                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
-                                                href={data.link.url}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mr-1 h-3 w-3" aria-hidden="true">
-                                                    <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
-                                                    <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
-                                                </svg>
-                                                <span>{data.link.name}</span>
-                                            </a>
-                                        )} */}
+                                        <span className="inline-block">{experience.name}</span>
                                     </h3>
-                                    <div>
-                                        <div className="text-slate-500 text-sm" aria-hidden="true">
-                                            {data.role}
-                                        </div>
+                                    <div className="text-slate-500 text-sm" aria-hidden="true">
+                                        <p>{experience.role}</p>
+                                        <p>{experience.position}</p>
                                     </div>
-                                    <ul className="mt-2 text-sm leading-normal">
-                                        <p>{data.work && data.work}</p>
+                                    <ul className="mt-2 text-sm leading-normal break-keep">
+                                        <p>{experience.desc}</p>
                                     </ul>
-                                    {/* <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                        {data.skills &&
-                                            data.skills.map((skill, index2) => (
-                                                <li className="mr-1.5 mt-2" key={index2}>
-                                                    <div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 bg-blue-700/10  text-blue-600 dark:bg-teal-400/10  dark:text-teal-300">
-                                                        {skill}
-                                                    </div>
-                                                </li>
-                                            ))}
-                                    </ul> */}
                                 </div>
                             </div>
                         </li>
