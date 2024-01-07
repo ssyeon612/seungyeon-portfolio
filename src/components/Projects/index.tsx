@@ -175,7 +175,7 @@ const Projects = () => {
         {
             company: "앱지",
             name: "공동주택 관리 플랫폼 : 함께관리해",
-            period: "2021.03 — 2023.05",
+            period: "2021.03 — 2021.05",
             skills: ["Vue3", "Nuxt", "Java", "Spring Boot", "MySQL", "jOOQ", "Nginx"],
             works: [
                 "Nuxt 기반 관리자 웹 페이지, Vue 기반 하이브리드 앱 개발",
