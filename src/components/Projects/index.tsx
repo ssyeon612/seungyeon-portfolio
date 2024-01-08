@@ -31,7 +31,7 @@ const Projects = () => {
         {
             company: "앱지",
             name: "전자제품 견적비교 플랫폼 : 스톤즈",
-            period: "2022.08 — 2023.11",
+            period: "2022.08 — 2022.11",
             skills: ["Vue3", "Nuxt", "Java", "Spring Boot", "MySQL", "jOOQ", "Nginx"],
             works: [
                 "Nuxt 기반 관리자 웹 페이지, Vue 기반 하이브리드 앱 개발",
