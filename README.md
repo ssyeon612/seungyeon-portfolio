@@ -3,5 +3,4 @@
 ### Tech 
 Next.js + Typescript + TailwindCSS + Netlify
 
-<a href="https://seungyeonj.netlify.app/" target="_blank">링크</a>
-
+[포트폴리오 구경가기](https://seungyeonj.netlify.app/){:target="_blank"}
