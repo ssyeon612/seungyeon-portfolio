@@ -3,13 +3,5 @@
 ### Tech 
 Next.js + Typescript + TailwindCSS + Netlify
 
-[링크][]
+[포트폴리오 구경가기]: https://seungyeonj.netlify.app/
 
-# link define
-[링크]: https://seungyeonj.netlify.app/
-
-[Google][]
-그러고 나서 link를 정의해준다.
-
-# link define
-[Google]: http://google.com/ 
