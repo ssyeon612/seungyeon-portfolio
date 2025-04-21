@@ -1,6 +1,13 @@
 const Experience = () => {
     const experiences = [
         {
+            name: "비트나인 (bitnine)",
+            period: "2024.02 — 2024.12",
+            role: "Enterprise R&D | 선임",
+            position: "Frontend Developer",
+            desc: "PostgreSQL 기반 그래프 데이터베이스 솔루션 기업",
+        },
+        {
             name: "유앤소프트 (unsoft)",
             period: "2022.11 — 2023.07",
             role: "개발팀 | 주임",
@@ -13,13 +20,6 @@ const Experience = () => {
             role: "개발사업본부 | 연구원",
             position: "Web Full Stack Developer",
             desc: "300개 이상의 다양한 플랫폼 기반 Enterprise System 개발 전문 에이전시",
-        },
-        {
-            name: "싱가포르 외식업 근무",
-            period: "2013.12 — 2019.10",
-            role: "식음료 부서 | 캡틴",
-            position: "F&B 캡틴",
-            desc: "호텔, 레스토랑에서 고객 응대, 예약, 정산, 이벤트 기획 업무 경험 및 신입직원 교육",
         },
     ];
 

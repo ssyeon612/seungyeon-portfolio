@@ -9,7 +9,8 @@ const Header = () => {
         { name: "About", href: "about" },
         { name: "Work Experience", href: "experience" },
         { name: "Projects", href: "project" },
-        { name: "Others", href: "others" },
+        { name: "Other Experience", href: "others" },
+        { name: "Education", href: "education" },
     ];
 
     const callback = function (entries: any, observer: any) {
@@ -72,8 +73,8 @@ const Header = () => {
                         </span>
                     </span>
                 </h1>
-                <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">FRONT-END DEVELOPER</h2>
-                <p className="mt-4 max-w-xs leading-normal">변화하지만 변함없는 개발자 정승연입니다.</p>
+                {/* <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl">FRONT-END DEVELOPER</h2>
+                <p className="mt-4 max-w-xs leading-normal">변화하지만 변함없는 개발자 정승연입니다.</p> */}
                 <nav className="nav hidden lg:block" aria-label="In-page jump links">
                     <ul className="mt-16 w-max">
                         {menus.map((menu, index) => (
@@ -110,7 +111,7 @@ const Header = () => {
                 </li>
 
                 <li className="group mr-5 text-xs flex flex-col items-center">
-                    <a className="block opacity-50 hover:opacity-100" href="https://jeongseungyeon.notion.site/7088cba4eb72459bb04cbf959d3e2893" target="_blank">
+                    <a className="block opacity-50 hover:opacity-100" href="https://jeongseungyeon.notion.site/1cfbb9a3f99f8027a6ecc760908cd0bc" target="_blank">
                         <Image src="/icons/doc-icon.svg" alt="" width={30} height={40} className="brightness-0 dark:brightness-100" />
                     </a>
                     <p className="invisible transition-all group-hover:visible group-hover:translate-y-2">resume</p>

@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <head>
-                <title>정승연 | 프론트엔드 개발자</title>
+                <title>정승연</title>
                 <link rel="icon" href="/favicon.png" sizes="any" />
             </head>
             <body>

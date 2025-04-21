@@ -8,6 +8,54 @@ const Others = () => {
                 <ol className="group/list">
                     <li className="mb-12">
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                            <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2025.03</div>
+                            <div className="z-10 sm:col-span-6">
+                                <h3 className="font-medium leading-snug">OPIc IH</h3>
+                                {/* <ul className="mt-2 flex flex-wrap" aria-label="Related links">
+                                    <li className="mr-4">
+                                        <a
+                                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
+                                            href="/opic_cert.pdf"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mr-1 h-3 w-3" aria-hidden="true">
+                                                <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
+                                                <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
+                                            </svg>
+                                            <span>certificate</span>
+                                        </a>
+                                    </li>
+                                </ul> */}
+                            </div>
+                        </div>
+                    </li>
+                    <li className="mb-12">
+                        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                            <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2025.02</div>
+                            <div className="z-10 sm:col-span-6">
+                                <h3 className="font-medium leading-snug">ISTQB 자격증</h3>
+                                <ul className="mt-2 flex flex-wrap" aria-label="Related links">
+                                    <li className="mr-4">
+                                        <a
+                                            className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
+                                            href="/istqb_cert.JPEG"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="mr-1 h-3 w-3" aria-hidden="true">
+                                                <path d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"></path>
+                                                <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
+                                            </svg>
+                                            <span>certificate</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="mb-12">
+                        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                             <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2023.10</div>
                             <div className="z-10 sm:col-span-6">
                                 <h3 className="font-medium leading-snug">SQLD 자격증</h3>
@@ -43,11 +91,11 @@ const Others = () => {
                     </li>
                     <li className="mb-12">
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
-                            <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2011.01 — 2014.03</div>
+                            <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2013.12 — 2019.10</div>
                             <div className="z-10 sm:col-span-6">
-                                <h3 className="font-medium leading-snug">서울관광고등학교 졸업</h3>
+                                <h3 className="font-medium leading-snug">싱가포르 외식업 근무</h3>
                                 <div className="text-slate-500" aria-hidden="true">
-                                    홍보미디어과
+                                    호텔, 레스토랑에서 고객 응대, 예약, 정산, 이벤트 기획 업무 경험 및 신입직원 교육
                                 </div>
                             </div>
                         </div>

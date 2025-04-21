@@ -4,12 +4,28 @@ import Link from "next/link";
 const Projects = () => {
     const projects = [
         {
-            name: "개인 포트폴리오",
-            period: "2023.09 — 2023.10",
-            skills: ["Next.js", "Javascript", "Tailwind CSS"],
-            works: ["데스크탑, 모바일 지원 반응형 웹", "향상된 UX를 위한 다크모드"],
-            web: "https://seungyeonj.netlify.app",
-            github: "https://github.com/ssyeon612/seungyeon-portfolio-2023",
+            company: "비트나인",
+            name: "AEM Monitor 기능 개선 및 기획 주도",
+            period: "2024.07 — 2023.12",
+            skills: ["Figma"],
+            works: [
+                "다양한 DB 모니터링 툴 분석을 통한 기능 제안 및 개선 방향 주도",
+                "DBA와의 기술 협의를 통해 15개 항목 제한을 넘어서는 고도화 기획안 수립",
+                "Figma 도입을 제안 및 적용하여 협업 효율성 및 문서 품질 향상",
+                "단순 UI 개선을 넘어 사용자 관점에서의 데이터 가시성 개선에 기여",
+            ],
+        },
+        {
+            company: "비트나인",
+            name: "Graphizer 글로벌 고도화",
+            period: "2024.03 — 2023.07",
+            skills: ["Next.js", "Redux Toolkit", "CSS Module", "Sigma.js"],
+            works: [
+                "최대 10MB 제한의 CSV 업로드 기능을 WebSocket 기반 실시간 업로드로 전환, 최대 2GB 지원 및 UX 대폭 향상",
+                "기존 multipart 방식 → WebSocket 방식으로 구조 변경하여 전송 성능 및 직관성 개선",
+                "i18n 라이브러리 도입을 통한 다국어 구조 설계 및 영어 지원 추가",
+                "디자이너와의 긴밀한 협업으로 UI/UX 전면 개선",
+            ],
         },
         {
             company: "유앤소프트",

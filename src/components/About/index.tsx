@@ -5,13 +5,19 @@ const About = () => {
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
             </div>
             <div>
-                <p className="mb-4 text-xl font-bold">안녕하세요,</p>
+                <p className="text-xl font-bold">안녕하세요,</p>
+                <br />
+                <p className="font-bold">기술과 품질 사이의 균형을 고민하는 QA 엔지니어 정승연입니다.</p>
+                <br />
                 <p className="mb-4">
-                    끊임없는 배움을 추구하지만 그로인한 경험과 처음의 마음가짐을 잃지 않고 변함없는 사람이 되고 싶은 프론트엔드 개발자 정승연입니다. 저는 어떤일이 일어나는 원인에 대해 추론하고
-                    생각하기를 좋아합니다. 그렇기 때문에 초기 단계부터 구축하여 개선까지 시켜나가는 프로덕트에 제 흔적을 남기고 싶은 갈증을 가지고 있습니다.
+                    프론트엔드와 풀스택 개발자로 다양한 프로젝트를 경험하며 기능 구현뿐 아니라 <br />
+                    <span className="font-bold">서비스 품질과 사용자 경험 개선</span>에 꾸준히 관심을 가져왔습니다. <br />
+                    문제의 원인을 깊이 있게 분석하고, 팀과 함께 해결책을 도출하는 과정에서 보람을 느낍니다.
+                    <br />
+                    <br />
+                    이제는 <span className="font-bold">기술 기반의 품질 향상</span>에 집중하며, 더 안정적이고 신뢰할 수 있는 서비스를 만드는 데 기여하고자 합니다. <br />
+                    성실하게, 책임감 있게, 팀에 든든한 사람이 되겠습니다.
                 </p>
-                <p className="mb-4 font-bold">믿을 수 있고 듬직한 사람이 되겠습니다.</p>
-                <p>주어진 업무에 정을 쉽게 붙이는 편입니다. 그렇기에 더더욱 책임감을 가지고 성실하게 업무를 수행하는 것에 자신있습니다.</p>
             </div>
         </section>
     );
