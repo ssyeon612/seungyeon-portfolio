@@ -314,11 +314,6 @@ const Projects = () => {
                                                 <Image src="/icons/apple-icon.svg" width={25} height={20} alt="web" className="hover:opacity-50 hover:scale-90 brightness-0 dark:brightness-100" />
                                             </Link>
                                         )}
-                                        {project.github && (
-                                            <Link href={project.github} target="_blank">
-                                                <Image src="/icons/github-icon.svg" width={23} height={20} alt="web" className="hover:opacity-50 hover:scale-90 brightness-0 dark:brightness-100" />
-                                            </Link>
-                                        )}
                                     </div>
                                 </div>
                             </div>
