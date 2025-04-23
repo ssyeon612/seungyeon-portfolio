@@ -19,6 +19,17 @@ const Education = () => {
                     </li>
                     <li className="mb-12">
                         <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
+                            <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2020.01 — 2020.07</div>
+                            <div className="z-10 sm:col-span-6">
+                                <h3 className="font-medium leading-snug">KH 정보교육원</h3>
+                                <div className="text-slate-500" aria-hidden="true">
+                                    자바 프레임워크 양성과정 수료
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="mb-12">
+                        <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4">
                             <div className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">2011.01 — 2014.03</div>
                             <div className="z-10 sm:col-span-6">
                                 <h3 className="font-medium leading-snug">서울관광고등학교 졸업</h3>

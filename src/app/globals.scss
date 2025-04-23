@@ -26,6 +26,8 @@ a {
 
 p {
     // @apply text-slate-900 dark:text-white;
+    white-space: pre-line;
+    word-break: keep-all;
 }
 
 span {
