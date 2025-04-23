@@ -13,7 +13,7 @@ const Others = () => {
                                 <h3 className="font-medium leading-snug">OPIc – Intermediate High Level (ACTFL)</h3>
                                 <ul className="mt-2 flex flex-wrap" aria-label="Related links">
                                     <li className="mr-4">
-                                        <a
+                                        {/* <a
                                             className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-800 hover:text-blue-500 focus-visible:text-blue-500 dark:text-slate-300 dark:hover:text-teal-300 dark:focus-visible:text-teal-300"
                                             href="/opic_cert.pdf"
                                             target="_blank"
@@ -24,7 +24,7 @@ const Others = () => {
                                                 <path d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"></path>
                                             </svg>
                                             <span>View Certificate</span>
-                                        </a>
+                                        </a> */}
                                     </li>
                                 </ul>
                             </div>
